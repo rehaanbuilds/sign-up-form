@@ -1,6 +1,8 @@
 :root {
     --primary-blue: #173F68;
     --gold: #D6AA50;
+    --charcoal: #263648;
+    --sky-blue: #4A9BDF;
 }
 
 * {
@@ -36,6 +38,10 @@ body {
 
 .content {
     padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
 }
 
 .heading {
@@ -49,6 +55,68 @@ body {
     color: var(--gold);
 }
 
-.form-container {
-    padding-top: 50px;
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 40px;
+    max-width: 900px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(50% - 20px);
+}
+
+label {
+    color: var(--charcoal);
+    font-size: 20px;
+}
+
+input {
+    height: 50px;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid var(--primary-blue);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--gold);
+}
+
+button[type="submit"] {
+    background-color: var(--primary-blue);
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #F7FAFE;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--charcoal);
+}
+
+button[type="submit"]:active {
+    background-color: var(--gold);
+}
+
+p {
+    margin-top: 40px;
+    font-size: 20px;
+    color: var(--charcoal);
+}
+
+a {
+    color: var(--sky-blue);
+}
+
+a:hover {
+    text-decoration: none;
 }
