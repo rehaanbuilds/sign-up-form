@@ -1,15 +1,27 @@
+:root {
+    --primary-blue: #173F68;
+    --gold: #D6AA50;
+}
+
 * {
     box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 
 body {
     height: 100vh;
     margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
 }
 
 .container {
     height: 100%;
     width: 100%;
+    background-color: #F7FAFE;
     display: flex;
 }
 
@@ -20,4 +32,23 @@ body {
 .background img {
     width: 100%;
     height: 100%;
+}
+
+.content {
+    padding: 50px 70px;
+}
+
+.heading {
+    width: 800px;
+    color: #173F68;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.highlight {
+    color: var(--gold);
+}
+
+.form-container {
+    padding-top: 50px;
 }
