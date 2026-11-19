@@ -41,11 +41,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    gap: 100px;
 }
 
 .heading {
-    width: 800px;
+    width: 900px;
     color: #173F68;
     font-size: 40px;
     font-weight: 700;
@@ -88,6 +88,11 @@ input:focus {
     border: 2px solid var(--gold);
 }
 
+.button {
+    margin-top: 15px;
+    width: 100%;
+}
+
 button[type="submit"] {
     background-color: var(--primary-blue);
     padding: 20px 20px;
@@ -119,4 +124,12 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+input:user-invalid {
+    border: 2px solid tomato;
+}
+
+input:user-valid {
+    border: 2px solid #16866A;
 }
